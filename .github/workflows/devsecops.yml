@@ -10,7 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: SAST con Semgrep
-      run: semgrep scan --config .semgrep/sql.yml --error
+        run: semgrep scan --config .semgrep/sql.yml --error
+        
   dependencias:
     runs-on: ubuntu-latest
     steps:
